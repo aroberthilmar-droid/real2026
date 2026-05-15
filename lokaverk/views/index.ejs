@@ -1,0 +1,20 @@
+<section class="ark">
+
+    <div class="ham">
+        <% ark.forEach(hams => { %>
+            <div class="aslume">
+                <img src="<%= inmate.image %>" alt="<%= inmate.name %>">
+                <h3><%= inmate.name %></h3>
+                <p><%= inmate.legalname %></p>
+                <p><%= inmate.sentence %></p>
+                <p><%= inmate.crimes %></p>
+                <p><%= inmate.description %></p>
+                <p><%= inmate.universe %></p>
+
+                <a href="/inmate/<%= inmate.id %>" class="btn">ⓘ</a>
+            </div>
+        <% })%>
+
+    </div>
+
+</section>

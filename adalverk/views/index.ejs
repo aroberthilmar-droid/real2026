@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<section class="card">
+    <div class="game_things">
+        <% games.forEach(game => { %>
+            <div class="game_card">
+                <img src="<%= game.image %>" alt="<%= game.title %>">
+                <h3><%= game.title %></h3>
+                <p><%= game.year %></p>
+                <a href="/game/<%= game.id %>" class="btn">ⓘ</a>
+            </div>
+       <% }) %>
+    </div>
+
+</section>
+
+<%- include('partials/header') %>

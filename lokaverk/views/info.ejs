@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<section class="inmateInfo">
+    <img src="<%= inmate.image %>"> alt="<%= inmate.name %>">
+    <div>
+        <h1><%= inmate.name %> ("<%= inmate.sentence %>")</h1>
+        <p><%= inmate.description %></p>
+        <p><%= inmate.legalname %></p>
+        <p><%= inmate.crimes %></p>
+        <a href="/">← previous page</a>
+    </div>
+
+</section>
+
+<%- include('partials/header') %>
